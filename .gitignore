@@ -1,0 +1,27 @@
+# Ignore local Terraform provider directories in any folder
+**/.terraform/
+
+# Ignore state files (contains sensitive data)
+*.tfstate
+*.tfstate.*
+
+# Ignore crash logs
+crash.log
+crash.*.log
+
+# Ignore lock file (optional for beginners, but good practice to ignore while learning)
+.terraform.lock.hcl
+
+**/.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Ignore all AWS and SSH private keys
+*.pem
+*.ppk
+id_rsa
+id_ed25519
+
+# Specifically ignore the extensionless custom key
+custom-key
