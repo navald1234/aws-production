@@ -62,3 +62,18 @@ variable "root_volume_type" {
 variable "aws_region" {
   type = string
 }
+variable "iam_instance_profile_name" {
+  type = string
+}
+
+variable "user_data" {
+  type = string
+}
+variable "portfolio_bucket_arn" {
+  type = string
+  
+}
+variable "portfolio_bucket_name" {
+  type = string
+  
+}
