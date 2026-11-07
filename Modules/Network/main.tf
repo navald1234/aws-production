@@ -12,7 +12,7 @@ locals {
 
 module "vpc" {
 
-  source = "./VPC"
+  source = "./vpc"
 
   vpc_cidr = var.vpc_cidr
 
@@ -68,7 +68,7 @@ module "nat" {
 
 module "route_tables" {
 
-  source = "./Route-Tables"
+  source = "./route-table"
 
   vpc_id = module.vpc.vpc_id
 
@@ -83,7 +83,7 @@ module "route_tables" {
 
 module "security_groups" {
 
-  source = "./security-groups"
+  source = "./sg"
 
   vpc_id = module.vpc.vpc_id
 

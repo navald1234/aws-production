@@ -25,3 +25,4 @@ id_ed25519
 
 # Specifically ignore the extensionless custom key
 custom-key
+*.tfvars

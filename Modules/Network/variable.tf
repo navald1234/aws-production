@@ -1,9 +1,9 @@
+
 #################################################
 # ENVIRONMENT
 #################################################
 
 variable "environment" {
-
   type = string
 }
 
@@ -12,14 +12,11 @@ variable "environment" {
 #################################################
 
 variable "project_name" {
-
   type = string
 }
 
 variable "managed_by" {
-
-  type = string
-
+  type    = string
   default = "Terraform"
 }
 
@@ -28,7 +25,6 @@ variable "managed_by" {
 #################################################
 
 variable "cluster_name" {
-
   type = string
 }
 
@@ -37,7 +33,6 @@ variable "cluster_name" {
 #################################################
 
 variable "vpc_cidr" {
-
   type = string
 }
 
@@ -46,12 +41,10 @@ variable "vpc_cidr" {
 #################################################
 
 variable "public_subnets" {
-
   type = list(string)
 }
 
 variable "private_subnets" {
-
   type = list(string)
 }
 
@@ -60,7 +53,6 @@ variable "private_subnets" {
 #################################################
 
 variable "availability_zones" {
-
   type = list(string)
 }
 
@@ -69,12 +61,39 @@ variable "availability_zones" {
 #################################################
 
 variable "admin_access_cidr" {
-
-  type = string
-
+  type    = string
   default = "0.0.0.0/0"
 }
 
 variable "aws_region" {
+  type    = string
   default = "ap-south-1"
+}
+
+#################################################
+# ROUTE 53 AND SSL
+#################################################
+
+variable "hosted_zone_id" {
+  type    = string
+  default = null
+}
+
+variable "subject_alternative_names" {
+  type    = list(string)
+  default = []
+}
+
+variable "domain_name" {
+  type    = string
+  default = null
+}
+
+#################################################
+# COMMON TAGS
+#################################################
+
+variable "common_tags" {
+  type    = map(string)
+  default = {}
 }

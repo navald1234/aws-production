@@ -1,6 +1,6 @@
 # 1. Reference your existing Route 53 Hosted Zone
 data "aws_route53_zone" "main" {
-  name         = var.hosted_zone_name
+  name         = "navald.online."
   private_zone = false
 }
 

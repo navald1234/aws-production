@@ -1,3 +1,4 @@
+
 #################################################
 # ENVIRONMENT
 #################################################
@@ -8,14 +9,24 @@ environment = "dev"
 # PROJECT
 #################################################
 
-project_name = "production-eks-platform"
+project_name = "aws-production"
 
 #################################################
-# ACM
+# DOMAIN CONFIGURATION
 #################################################
 
-domain_name = "*.navald.online"
+domain_name = "navald.online"
 
 root_domain = "navald.online"
 
-aws_region = "us-east-1"
+#################################################
+# AWS REGION
+#################################################
+
+aws_region = "ap-south-1"
+
+#################################################
+# RESOURCE MANAGEMENT
+#################################################
+
+managed_by = "Terraform"

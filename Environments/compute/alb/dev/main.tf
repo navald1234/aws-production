@@ -43,5 +43,5 @@ module "alb" {
   #################################################
 
   acm_certificate_arn = data.terraform_remote_state.acm_backend.outputs.certificate_arn
-  aws_region = var.aws_region
+  aws_region          = var.aws_region
 }
