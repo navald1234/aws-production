@@ -17,6 +17,6 @@ data "terraform_remote_state" "portfolio" {
 
     key = "compute/portfolio/dev/terraform.tfstate"
 
-    region = var.aws_region
+    region = "ap-south-1"
   }
 }

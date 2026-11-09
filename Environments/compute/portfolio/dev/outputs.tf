@@ -1,7 +1,7 @@
 output "bucket_name" {
-  value = module.
+  value = module.portfolio.bucket_name
 }
 
 output "bucket_arn" {
-  value = aws_s3_bucket.portfolio.arn
+  value = module.portfolio.bucket_arn
 }

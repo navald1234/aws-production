@@ -1,7 +1,9 @@
 output "bucket_name" {
-  value = aws_s3_bucket.portfolio.bucket
+  description = "Portfolio S3 bucket name"
+  value       = aws_s3_bucket.portfolio.bucket
 }
 
 output "bucket_arn" {
-  value = aws_s3_bucket.portfolio.arn
+  description = "Portfolio S3 bucket ARN"
+  value       = aws_s3_bucket.portfolio.arn
 }
