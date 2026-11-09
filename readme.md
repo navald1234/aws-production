@@ -343,3 +343,16 @@ MCA Student | Aspiring Cloud / DevOps Engineer
 ⭐ If you find this project useful, consider giving the repository a star.
 
 **Built with AWS, Terraform, and hands-on learning.**
+## 📸 Project Screenshots
+
+### 1. AWS Architecture
+![AWS Terraform Architecture](./screenshots/AWS%20Terraform%20Architecture%20Overview.png)
+
+### 2. Website Preview
+![Portfolio Website](./screenshots/Screenshot%202026-11-09%20165013.png)
+
+### 3. AWS Infrastructure
+![AWS Infrastructure](./screenshots/Screenshot%202026-11-09%20165053.png)
+
+### 4. Deployment Verification
+![Deployment Verification](./screenshots/Screenshot%202026-11-09%20165114.png)
