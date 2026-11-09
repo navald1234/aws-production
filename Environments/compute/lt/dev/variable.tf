@@ -35,7 +35,7 @@ variable "instance_type" {
 
   type = string
 
-  default = "t2.micro"
+  default = "t3.micro"
 }
 
 variable "key_name" {
@@ -67,12 +67,3 @@ variable "domain_name" {
   type = string
 }
 
-output "bucket_name" {
-
-  value = aws_s3_bucket.portfolio.bucket
-}
-
-output "bucket_arn" {
-
-  value = aws_s3_bucket.portfolio.arn
-}
